@@ -183,3 +183,4 @@ BuildProcessTemplates/
 #Storm.Streams/obj
 #Storm.Wpf/bin
 #Storm.Wpf/obj
+spiffy-rs/target
