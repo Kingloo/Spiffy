@@ -183,5 +183,5 @@ BuildProcessTemplates/
 #Storm.Streams/obj
 #Storm.Wpf/bin
 #Storm.Wpf/obj
-spiffy-rs/target
-sipffy-rs/Cargo.lock
+#spiffy-rs/target
+#sipffy-rs/Cargo.lock
