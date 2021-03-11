@@ -1,5 +1,3 @@
-use reqwest::header::USER_AGENT;
-use reqwest::Method;
 use reqwest::Url;
 
 fn main() {
@@ -35,15 +33,7 @@ fn main() {
 fn get_ip_address(url: Url) -> Option<String> {
     let mut result: Option<String> = None;
 
-    let mut request = reqwest::blocking::Request::new(Method::GET, url);
-    let headers = request.headers_mut();
-    headers.insert(USER_AGENT, "spiffy-rs (https://github.com/Kingloo/spiffy-rs)"
-        .parse()
-        .expect("failed to parse User-Agent"));
-
-    let request_url: Url = request.url().clone();
-
-    if let Ok(r) = reqwest::blocking::get(request_url) {
+    if let Ok(r) = reqwest::blocking::get(url) {
         if r.status().is_success() {
             if let Ok(s) = r.text() {
                 result = Some(s);
