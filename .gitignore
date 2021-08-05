@@ -181,4 +181,3 @@ BuildProcessTemplates/
 .vs/
 
 spiffy-rs/target
-spiffy-rs/Cargo.lock
