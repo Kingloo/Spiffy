@@ -1,11 +1,11 @@
 [package]
 name = "spiffy-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Kingloo <k1ngloo@hotmail.com>"]
 edition = "2018"
 
 [dependencies]
-reqwest = { version = "0.10.10", features = ["blocking"] }
+reqwest = { version = "0.11.4", features = ["blocking"] }
 
 [profile.dev]
 opt-level = 0
