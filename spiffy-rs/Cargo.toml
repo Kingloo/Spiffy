@@ -1,6 +1,6 @@
 [package]
 name = "spiffy-rs"
-version = "0.1.1"
+version = "1.0.0"
 authors = ["Kingloo <k1ngloo@hotmail.com>"]
 edition = "2018"
 
