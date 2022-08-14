@@ -7,7 +7,7 @@ fn main() {
 	let ipv4_endpoint = Url::parse("https://api.ipify.org/")
 		.expect("failed to parse IPv4 endpoint");
 
-	let ipv6_endpoint = Url::parse("https://api64.ipify.org/")
+	let ipv6_endpoint = Url::parse("https://api6.ipify.org/")
 		.expect("failed to parse IPv6 endpoint");
 
 	let ipv4 = get_ip_address(ipv4_endpoint);
