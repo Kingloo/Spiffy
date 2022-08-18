@@ -34,22 +34,12 @@ fn get_ip_address(url: Url) -> Option<String> {
 	let mut result: Option<String> = None;
 
 	if let Ok(r) = reqwest::blocking::get(url) {
-		let status = r.status();
-        if status.is_success() {
+        if r.status().is_success() {
 			if let Ok(s) = r.text() {
 				result = Some(s);
 			}
-            else {
-                println!("r.text was not OK")
-            }
 		}
-        else {
-            println!("r.status was {}", status)
-        }
 	}
-    else {
-        println!("request was Error")
-    }
 
 	result
 }
