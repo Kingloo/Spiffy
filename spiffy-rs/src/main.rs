@@ -4,7 +4,7 @@ fn main() {
 	let args: Vec<String> = std::env::args().collect();
 	let pretty_print = args.contains(&String::from("--pretty"));
 
-	let ipv4_endpoint = Url::parse("https://api.ipify.org/")
+	let ipv4_endpoint = Url::parse("https://api4.ipify.org/")
 		.expect("failed to parse IPv4 endpoint");
 
 	let ipv6_endpoint = Url::parse("https://api6.ipify.org/")
